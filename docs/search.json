@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Make a thing in R-Week 7",
+    "section": "",
+    "text": "This is a quarto website that shows a graph comparing the type of car to the mean MPG (Miles per Gallon) with the mtcars data set.\n\nlibrary(ggplot2)\n\nggplot(data = mtcars, aes(x = rownames(mtcars), y = mpg)) +\n  geom_bar(stat = \"identity\", fill = \"blue\") +\n  xlab(\"Car Model\") +\n  ylab(\"Mean MPG\") +\n  ggtitle(\"Mean MPG by Car Model\") +\n  theme(axis.text.x = element_text(angle = 60, hjust = 1))"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Data-Colloquium.html",
+    "href": "Data-Colloquium.html",
+    "title": "Data Colloquium",
+    "section": "",
+    "text": "Data Colloquium"
+  }
+]

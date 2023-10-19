@@ -1,0 +1,16 @@
+---
+title: "Make a thing in R-Week 7"
+---
+
+This is a quarto website that shows a graph comparing the type of car to the mean MPG (Miles per Gallon) with the mtcars data set.
+
+```{r}
+library(ggplot2)
+
+ggplot(data = mtcars, aes(x = rownames(mtcars), y = mpg)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  xlab("Car Model") +
+  ylab("Mean MPG") +
+  ggtitle("Mean MPG by Car Model") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+```
